@@ -23,6 +23,7 @@ X = "Sally"
 print(x)
 print(X)
 
+
 # Variable Names
 myvar = "John"
 my_var = "John"
@@ -30,6 +31,7 @@ _my_var = "John"
 myVar = "John"
 MYVAR = "John"
 myvar2 = "John"
+
 
 # Assign Multiple Values
 q, w, e = "Orange", "Banana", "Cherry"
@@ -48,6 +50,7 @@ print(i)
 print(o)
 print(p)
 
+
 # Output Variables
 qq = "Python is awesome"
 print(qq)
@@ -65,6 +68,7 @@ print(g + h + j)
 k = 5
 l = 10
 print(k + l)
+
 
 # Global Variables
 v = "awesome"
