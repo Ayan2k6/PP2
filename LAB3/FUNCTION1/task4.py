@@ -9,5 +9,5 @@ def isPrime(n):
 def filter_prime(numbers):
     numbers = list(map(int, numbers.split()))
     return [x for x in numbers if isPrime(x)]
-numbers = input()
-print(filter_prime(numbers))
+numbers = input("Enter your numbers or number: ")
+print("Prime numbers are:",filter_prime(numbers))

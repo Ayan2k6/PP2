@@ -9,8 +9,8 @@ def solve(numheads, numlegs):
     x = numheads - y
 
     return f"We have {x} chickens and {y} rabbits"
-print ("numer of heads: ")
+print ("Enter numer of heads: ")
 numheads = int(input())
-print ("numer of legs: ")
+print ("Enter numer of legs: ")
 numlegs = int(input())
 print(solve(numheads, numlegs))
