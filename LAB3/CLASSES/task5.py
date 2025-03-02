@@ -14,13 +14,13 @@ class Bank():
 
         return f"You are deposit {money} money"
     
-    def withdraw(self, money):
-        if self.money - money < 0:
+    def withdraw(self, money2):
+        if self.money - money2 < 0:
             return "insufficient funds"
         else:
-            self.money-=money
+            self.money-=money2
 
-            return f"you're balance: {self.money},  and you take {money}"
+            return f"you're balance: {self.money},  and you take {money2}"
         
         
 bank = Bank("Bekzat", 1000)

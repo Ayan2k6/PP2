@@ -1,32 +1,34 @@
 import math
 
 class Point:
-    def __init__(self,x,y):
+    def __init__(self, x, y):
         self.x = x
         self.y = y
 
     def show(self):
-        print(f"Coordinates: ({self.x}, {self.y})")
+        print(f"({self.x}, {self.y})")
 
-    def move(self, x1, y1):
-        self.x = x1
-        self.y = y1
+    def newxy(self, new_x, new_y):
+        self.x = new_x
+        self.y = new_y
 
-    def dist(self, point2):
-        dx = self.x - point2.x
-        dy = self.y - point2.y
-        distance = math.sqrt(dx**2 + dy**2)
-        return distance
-a=float(input("x:"))
-b=float(input("y:"))
-point1 = Point(a,b)
-point2 = Point(a,b)
+    def distance_to(self, other_point):
+        return math.sqrt((self.x - other_point.x) ** 2 + (self.y - other_point.y) ** 2)
 
-point1.show() 
-k=float(input("x1:"))
-p=float(input("y1:"))
-point1.move(k,p)
-point1.show() 
+# Создание точки
+x = float(input("Введите x: "))
+y = float(input("Введите y: "))
+point1 = Point(x, y)
+point2 = Point(x, y)
 
-distance = point1.dist(point2)
-print(f"Distance between point1 and point2: {distance}")
+# Показать координаты
+point1.show()
+
+# Перемещение точки
+new_x = float(input("Введите новое x: "))
+new_y = float(input("Введите новое y: "))
+point1.newxy(new_x, new_y)
+point1.show()
+
+# Вычисление расстояния
+print("Расстояние между точками:", point1.distance_to(point2))
