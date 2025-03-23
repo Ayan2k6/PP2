@@ -5,7 +5,7 @@ pygame.init()
 
 playlist = []
 # музыкалар орналасқан жерге path 
-music_folder = "/Users/bekzatshaiyrgozha/Documents/PP2/lab7/musics"
+music_folder = "C:/Users/user/Desktop/CODES/PP2/LAB7/musics"
 allmusic = os.listdir(music_folder)
 
 # playlist-қа .mp3 деп аяқталса қосамыз 
@@ -18,7 +18,7 @@ pygame.display.set_caption("Darkhan-Juzz")
 clock = pygame.time.Clock()
 
 # артқы фонды енгіземіз
-background = pygame.image.load(os.path.join("music-elements", "background.png"))
+background = pygame.image.load(os.path.join("C:/Users/user/Desktop/CODES/PP2/LAB7/music-elements", "background.png"))
 
 # кнопкалар тұратын жердің фонын жасаймыз, алдымен көлемі, сосын RGB ақ түс
 bg = pygame.Surface((500, 200))
@@ -28,10 +28,10 @@ bg.fill((255, 255, 255))
 font2 = pygame.font.SysFont(None, 20)
 
 # кнопкаларды папкадан енгіземіз
-playb = pygame.image.load(os.path.join("music-elements", "play.png"))
-pausb = pygame.image.load(os.path.join("music-elements", "pause.png"))
-nextb = pygame.image.load(os.path.join("music-elements", "next.png"))
-prevb = pygame.image.load(os.path.join("music-elements", "back.png"))
+playb = pygame.image.load(os.path.join("C:/Users/user/Desktop/CODES/PP2/LAB7/music-elements", "play.png"))
+pausb = pygame.image.load(os.path.join("C:/Users/user/Desktop/CODES/PP2/LAB7/music-elements", "pause.png"))
+nextb = pygame.image.load(os.path.join("C:/Users/user/Desktop/CODES/PP2/LAB7/music-elements", "next.png"))
+prevb = pygame.image.load(os.path.join("C:/Users/user/Desktop/CODES/PP2/LAB7/music-elements", "back.png"))
 
 index = 0
 aplay = False
