@@ -86,3 +86,5 @@ while run:
 
     clock.tick(24)
     pygame.display.update()
+
+pygame.quit()
