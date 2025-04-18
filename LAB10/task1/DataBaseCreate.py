@@ -11,7 +11,7 @@ def open_connection():
     )
 
 def create_phonebook_table():
-    conn = None
+    conn=None
     try:
         conn = open_connection()
         conn.autocommit = True
